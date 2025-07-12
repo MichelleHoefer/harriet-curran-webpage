@@ -1,15 +1,15 @@
+/* Header image styling */
 .header-image {
-  width: 100%;
-  height: auto;
-  display: block;
   object-fit: cover;
   max-height: 250px;
 }
 
+/* Spacing below the header */
 header {
   margin-bottom: 20px;
 }
 
+/* Responsive header image height */
 @media (max-width: 768px) {
   .header-image {
     max-height: 150px;
@@ -19,10 +19,18 @@ header {
 @media (max-width: 480px) {
   .header-image {
     max-height: 120px;
+    min-height: 80px; /* Prevents it from becoming too small */
   }
 }
 
+/* Heading styles */
 h2 {
   font-size: 24px;
   font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 30px;
+  }
 }
